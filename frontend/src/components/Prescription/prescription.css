@@ -1,0 +1,89 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 95vh;
+  }
+  .drawing-area {
+    box-shadow: 0 0 6px 0 #999;
+  }
+  .menu {
+    position: relative;
+}
+
+.color-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: auto; /* Adjust this value as needed */
+    white-space: nowrap; /* Prevent buttons from wrapping */
+}
+
+.color-menu.show {
+    display: flex;
+}
+
+.color-button {
+    background-color: transparent;
+    border: none;
+    color: #333;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.color-button:hover {
+    color: #555;
+}
+
+.menu-button {
+    background-color: transparent;
+    border: none;
+    color: #333;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.menu-button:hover {
+    color: #555;
+}
+
+/* Define the common styles for the bullet */
+.bullet {
+    display: inline-block;
+    width: 10px; /* Adjust size as needed */
+    height: 10px; /* Adjust size as needed */
+    border-radius: 50%;
+    margin-right: 5px; /* Adjust spacing between bullet and text */
+  }
+  
+  /* Define specific colors for each bullet */
+  .black-bullet {
+    background-color: black;
+  }
+  
+  .blue-bullet {
+    background-color: blue;
+  }
+  
+  .red-bullet {
+    background-color: red;
+  }
+  
+  .clear-button, .save-button {
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 8px;
+
+  }
